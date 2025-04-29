@@ -6,7 +6,7 @@ on:
 
 jobs:
   runner-info:
-    runs-on: k3s
+    runs-on: self-hosted
     steps:
       - name: Printing runner info
         run: echo '{{toJson(runner}}'
